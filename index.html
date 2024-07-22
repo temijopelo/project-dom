@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <script src="https://kit.fontawesome.com/77b49a01e6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        .fa-heart.active {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="text-3xl font-black text-center">SHOPPING CART <i class="fa-solid fa-cart-shopping"></i></h1>
+
+    <ul class="flex flex-col justify-center items-center">
+        <li class="flex gap-8 p-10 w-[30%] justify-between">
+            <p>Apple</p>
+            <p class="item-price">$ 10</p>
+            <span class="quantity">
+                <button class="increaseBtn">+</button>
+                <span class="quantitySpan">1</span>
+                <button class="decreaseBtn">-</button>
+            </span>
+            <button class="delBtn">Del</button>
+            <span>
+                <a href="#">
+
+                    <i class="fa-solid fa-heart heartIcon"></i>
+                </a>
+            </span>
+
+        </li>
+        <li class="flex gap-8 p-10 w-[30%] justify-between">
+            <p>Banana</p>
+            <p class="item-price">$ 5</p>
+            <span class="quantity">
+                <button class="increaseBtn">+</button>
+                <span class="quantitySpan">1</span>
+                <button class="decreaseBtn">-</button>
+            </span>
+            <button class="delBtn">Del</button>
+            <span>
+                <a href="#">
+
+                    <i class="fa-solid fa-heart heartIcon"></i>
+                </a>
+            </span>
+
+        </li>
+        <li class="flex gap-8 p-10 w-[30%] justify-between">
+            <p>iPhone 14</p>
+            <p class="item-price">$ 550</p>
+            <span class="quantity">
+                <button class="increaseBtn">+</button>
+                <span class="quantitySpan">1</span>
+                <button class="decreaseBtn">-</button>
+            </span>
+            <button class="delBtn">Del</button>
+            <span>
+                <a href="#">
+
+                    <i class="fa-solid fa-heart heartIcon"></i>
+                </a>
+            </span>
+
+        </li>
+        <li class="flex gap-8 p-10 w-[30%] justify-between">
+            <p>PS 5</p>
+            <p class="item-price">$ 350</p>
+            <span class="quantity">
+                <button class="increaseBtn">+</button>
+                <span class="quantitySpan">1</span>
+                <button class="decreaseBtn">-</button>
+            </span>
+            <button class="delBtn">Del</button>
+            <span>
+                <a href="#">
+
+                    <i class="fa-solid fa-heart heartIcon"></i>
+                </a>
+            </span>
+
+        </li>
+    </ul>
+
+    <div class="total-container">
+        <h2 class="text-xl underline font-bold text-center">Total: $<span id="totalAmount">0</span></h2>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
