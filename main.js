@@ -1,6 +1,8 @@
 const cartList = document.querySelectorAll("ul li");
 let totalAmount = 0;
 
+// iterating over the li items
+
 cartList.forEach((item) => {
   const increaseBtn = item.querySelector(".increaseBtn");
   const decreaseBtn = item.querySelector(".decreaseBtn");
@@ -13,12 +15,16 @@ cartList.forEach((item) => {
   totalAmount += parseInt(quantitySpan.textContent) * itemPrice;
   updateAmount();
 
+  // increment buttons
+
   increaseBtn.addEventListener("click", () => {
     let currentQuantitySpan = parseInt(quantitySpan.textContent);
     quantitySpan.textContent = currentQuantitySpan + 1;
     totalAmount += itemPrice;
     updateAmount();
   });
+
+  //   decrement button
 
   decreaseBtn.addEventListener("click", () => {
     let currentQuantitySpan = parseInt(quantitySpan.textContent);
@@ -35,6 +41,8 @@ cartList.forEach((item) => {
 
     console.log("deleted");
   });
+
+  // like function
 
   heartIcon.addEventListener("click", () => {
     heartIcon.classList.toggle("active");
